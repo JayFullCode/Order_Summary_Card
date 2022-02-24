@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+}
+
+html , body{
+    margin: 0;
+    padding: 0;
+
+    height: 100%;
+
+    background-color: hsl(224, 23%, 55%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card{
+    width: 350px;
+    height: 600px;
+    border-radius: 20px;
+
+    background-color: white;
+}
+
+#order-image{
+    height: 30%;
+
+    border-radius: 20px 20px 0px 0px;
+}
+
+#order-image img{
+    width: 100%;
+    height: 100%;
+
+    border-radius: 20px 20px 0px 0px;
+}
+
+
+/********* BODY ********/
+
+
+#order-body{
+    height: 70%;
+
+    border-radius: 0px 0px 20px 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0px 20px;
+    
+    
+}
+
+p{
+    text-align: center;
+}
+
+#annual-plan{
+    background-color: hsl(225, 100%, 98%);
+    width: 100%;
+
+    display: flex;
+
+    border-radius: 20px;
+
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#info-plan{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    margin-left: 10px; 
+
+}
+
+#info-plan #title{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#annual-plan a{
+    text-align: center;
+}
+
+#payment{
+    background-color: hsl(245, 75%, 52%);
+
+    width: 100%;
+    padding: 10px;
+
+    text-align: center;
+
+    border-radius: 10px;
+    color: white;
+}
+
+#cancel{
+
+    width: 100%;
+    padding: 10px;
+
+    text-align: center;
+
+    margin-top: 5px;
+}
