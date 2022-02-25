@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Red Hot Display';
+    src: url(RedHatDisplay-VariableFont_wght.ttf);
+}
+
+
 *{
     box-sizing: border-box;
 }
@@ -8,19 +14,25 @@ html , body{
 
     height: 100%;
 
-    background-color: hsl(224, 23%, 55%);
+    background: url('images/Wave.svg') no-repeat;
+    background-size: cover;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    font-family: 'Red Hot Display', sans-serif;
 }
 
 #card{
-    width: 350px;
+    width: 400px;
     height: 600px;
     border-radius: 20px;
 
     background-color: white;
+
+    box-shadow: 0px 15px 10px hsl(220, 75%, 87%);
+
 }
 
 #order-image{
@@ -50,13 +62,12 @@ html , body{
     justify-content: center;
     align-items: center;
 
-    padding: 0px 20px;
-    
-    
+    padding: 0px 30px;
 }
 
 p{
     text-align: center;
+    color: grey;
 }
 
 #annual-plan{
@@ -89,8 +100,13 @@ p{
     margin-bottom: 5px;
 }
 
+#info-plan #price{
+    color: grey;
+}
+
 #annual-plan a{
     text-align: center;
+    color: hsl(223, 47%, 23%);
 }
 
 #payment{
@@ -103,14 +119,37 @@ p{
 
     border-radius: 10px;
     color: white;
+    font-weight: bold;
+    font-size: small;
+
+    margin-top: 20px;
+
+    box-shadow: 0px 15px 10px hsl(245, 75%, 92%);
+}
+
+#payment:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#cancel:hover{
+    font-weight: bolder;
+    cursor: pointer;
 }
 
 #cancel{
 
-    width: 100%;
     padding: 10px;
 
     text-align: center;
 
     margin-top: 5px;
+
+
+    margin-top: 20px;
+
+}
+
+h2{
+    margin: 0;
 }
